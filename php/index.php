@@ -1,4 +1,6 @@
-<?php include("../php/master.php");?>
+<?php 
+    include("../php/master.php");
+?>
 
 <!DOCTYPE html>
 
@@ -15,14 +17,16 @@
         <link href="../css/list.css" type="text/css" rel="stylesheet">
         <link href="../css/master.css" type="text/css" rel="stylesheet">
 
+
         <script type="text/javascript" src="../jquery/cnf.js"></script>
         <script>
             $(document).ready(function(){
-            setInterval(function(){
-                $("#DropDown").load("mastLead.php");
-            }, 500);
-        });
+                setInterval(function(){
+                    $("#DropDown").load("mastLead.php");
+                }, 500);
+            });
         </script>
+
 
         <style>
             .reversehr{
@@ -32,6 +36,7 @@
                 border-width: 0 0 1px 0; 
                 border-radius: 20px;
             }
+
 
         </style>
 
@@ -107,7 +112,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>';}
+                        </div>';
+                    }
                 ?>
             </div>
             <div class="showoff">
@@ -148,6 +154,10 @@
             }else{
                 document.getElementById("leaderimg").src = "../Images/lead.png";
             }
-        }            
+        }   
+
+        if(screen.width <= 800){
+            window.location = "http://localhost/EndGem/php/m_index.php";
+        }         
     </script>
 </html>
