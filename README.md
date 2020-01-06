@@ -9,6 +9,9 @@ Please visit http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/index.
 
 The website has been hosted using Amazon Web Services on Amazon Linux 2 AMI (HVM) - [ami-00068cd7555f543d5] with Instance type t2.micro
 
+
+In order to see the table structure, please select raw mode.
+
 The source files for the same are available in this repository
 In order to run the website using the source code, please follow the given instructions:
 
