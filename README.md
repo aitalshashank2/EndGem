@@ -2,8 +2,14 @@
 Website for IMG Recruitment
 
 
-
 Please visit http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/index.php
+
+
+
+
+
+
+In order to see the table structure, please select raw mode.
 
 There are two icons on the top right part of the homepage. The icon to the left is specially made for the admins whereas the one on the right is made for EndGem users. Registration to the website can be done by the 'sign up' option in user login (the button on the right).
 
@@ -11,8 +17,6 @@ There are two icons on the top right part of the homepage. The icon to the left 
 
 The website has been hosted using Amazon Web Services on Amazon Linux 2 AMI (HVM) - [ami-00068cd7555f543d5] with Instance type t2.micro
 
-
-In order to see the table structure, please select raw mode.
 
 The source files for the same are available in this repository
 In order to run the website using the source code, please follow the given instructions:
@@ -52,4 +56,7 @@ The admin has the ability of deleting contents.
 
 The login status of the user is preserved using cookies. Any internal webpage of the website cannot be accessed without adequate authorization.
 
-Account verification functionality is added due to which invalid email ids wont work. This is done by assigning and sending an md5 hash to the email id.
+Account verification functionality is added due to which invalid email ids wont work. This is done by assigning and sending an md5 hash of a random number from 1 to 1000 to the email id.
+
+*Mobile version of the website is under development. The mobile website under construction is a whole website, not screen-size dependent css.
+
