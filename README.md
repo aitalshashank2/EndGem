@@ -18,7 +18,7 @@ In order to run the website using the source code, please follow the given instr
 1. Enter the password of local mysql server in php/config.php file
 2. The configuration of the mysql database is as follows:
     Database name : FilesDatabase
-    Tables inside the database : AdminInfo; Course1; Course2; Course3; Course4.
+    Tables inside the database : AdminInfo; Course1; Course2; Course3; Course4; UserInfo
     
 3. The configuration of tables is as follows:
     AdminInfo : UserName - VARCHAR(255);
@@ -34,12 +34,16 @@ In order to run the website using the source code, please follow the given instr
         path                    -VARCHAR(1023)     -NOT NULL
         Course                  -VARCHAR(255)      -NOT NULL
         
-        
+     UserInfo : UserName - VARCHAR(255);
+                Password - VARCHAR(255);
+                Email    - VARCHAR(511).
         
 
 Functionality of the website:
 
-Files can be added by anyone. The website is designed to display the documents which would play a vital role in the elevnth hour preparation of the various courses.
-It displays top 6 documents of each course (soul, time, mind, power, reality and space) and also has a global leaderboard
+Files can be added by anyone who has a valid g-suite id. The website is designed to display the documents which would play a vital role in the elevnth hour preparation of the various courses.
+It displays top 6 documents of each course (soul, time, mind, power, reality and space) in a local leaderboard and also has a global leaderboard
 For the management of documents and to prevent spam attacks, a functionality of admin login has been provided.
 The admin has the ability of deleting contents.
+
+The login status of the user is preserved using cookies. Any internal webpage of the website cannot be accessed without adequate authorization.
