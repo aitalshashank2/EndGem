@@ -5,6 +5,8 @@ Website for IMG Recruitment
 
 Please visit http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/index.php
 
+There are two icons on the top right part of the homepage. The icon to the left is specially made for the admins whereas the one on the right is made for EndGem users. Registration to the website can be done by the 'sign up' option in user login (the button on the right).
+
 *Please note that account validation e-mail drops in your spam folder and the website can be accessed only with a valid and working IIT-R G-Suite ID!
 
 The website has been hosted using Amazon Web Services on Amazon Linux 2 AMI (HVM) - [ami-00068cd7555f543d5] with Instance type t2.micro
