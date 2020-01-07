@@ -3,18 +3,18 @@
 
     if(isset($_POST['submit']))
     {
-        if($_POST['courseName'] == "0" || empty($_POST['DName']) || empty($_FILES['myFile']) || empty($_POST['pdfName']))
+        if($_POST['courseName'] == "0" ||empty($_FILES['myFile']) || empty($_POST['pdfName']))
         {
             ?>
             <script>
                 alert("Please fill all the fields!");
-                window.location.replace("../html/upload.html");
+                window.location.replace("../php/Upload.php");
             </script>
             <?php
         }
         else{
             $course = $_POST['courseName'];
-            $displayName = $_POST['DName'];
+            $displayName = $_COOKIE['userName'];
             
             $filename = $_FILES['myFile']['name'];
             $destination = "../uploads/".$course."/".$filename;
@@ -40,14 +40,14 @@
                         ?>
                         <script>
                             alert("File Uploaded Successfully!");
-                            window.location.replace("../html/upload.html");
+                            window.location.replace("../php/Upload.php");
                         </script>
                         <?php
                     }else{
                         ?>
                         <script>
                             alert("An error occured!");
-                            window.location.replace("../html/upload.html");
+                            window.location.replace("../php/Upload.php");
                         </script>
                         <?php
                     }
@@ -56,7 +56,7 @@
                     ?>
                     <script>
                         alert("Error in uploading file!");
-                        window.location.replace("../html/upload.html");
+                        window.location.replace("../php/Upload.php");
                     </script>
                     <?php
                 }
@@ -64,7 +64,7 @@
                 ?>
                 <script>
                     alert("Please upload a .pdf file!");
-                    window.location.replace("../html/upload.html");
+                    window.location.replace("../php/Upload.php");
                 </script>
                 <?php
             }

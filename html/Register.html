@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Register | End Gem</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="../css/stylesh.css" type="text/css" rel="stylesheet">
+        <link href="../css/uploadstyle.css" type="text/css" rel="stylesheet">
+        <link href="../css/Alogin.css" type="text/css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="logo">
+                <a href="../php/index.php">
+                    <img src="../Images/logotrans.png" height="50px" width="50px" style="display: inline-flex; margin-top:5px;">
+                    <div class="logoText">
+                        End Gem<br>
+                        <div style="font-size:17px">Witness the Resurrection</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="ACont login" style="padding-top:25px;">
+            <h1 id="login">Register</h1>
+
+            <form action="../php/register.php" method="POST" enctype="multipart/form-data">
+                <div class="Acontent" style="width:60%; margin-left:20%; margin-right:20%;">
+                    <input type="text" name="userName" class="AinputField" placeholder="Username" style="text-align: center;">
+                </div>
+                <br>
+                <div class="Acontent" style="width:60%; margin-left:20%; margin-right:20%;">
+                    <input type="text" name="email" class="AinputField" placeholder="G-Suite Email ID" style="text-align: center;">
+                </div>
+                <br>
+                <div class="Acontent" style="width:60%; margin-left:20%; margin-right:20%;">
+                    <input type="password" name="Password" class="AinputField" placeholder="Password" style="text-align: center;">
+                </div>
+                <br>
+                <div class="Acontent" style="width:60%; margin-left:20%; margin-right:20%;">
+                    <input type="password" name="CnfPassword" class="AinputField" placeholder="Confirm Password" style="text-align: center;">
+                </div>
+                <br><br>
+                <div class="Acontent" style="width:40%; margin-left:30%; margin-right:30%;">
+                    <input type="submit" value="Sign Up" class="Abuttoncss" name="Asubmit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

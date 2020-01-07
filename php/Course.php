@@ -1,4 +1,12 @@
-<?php include('sort.php');?>
+<?php
+    if((!isset($_COOKIE['userName'])) || ($_COOKIE['userName'] == "")){
+       header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
+       die(header('location: ../html/index.html'));
+    }
+    include('sort.php');
+?>
+
+
 
 <!DOCTYPE html>
 
@@ -64,11 +72,11 @@
             </div>
 
             <div class="navbuttons">
-                <a href="../html/login.html">
-                    <div class="logo"><img src="../Images/admin.png" height="50px" width="50px" style="margin:10px;"></div>
+                <a href="../html/index.html" onclick="logout();">
+                    <div class="logo"><img src="../Images/logout.png" height="50px" width="50px" style="margin:10px;"></div>
                 </a>
                 
-                <a href="../html/upload.html">
+                <a href="../php/Upload.php">
                     <div class="logo"><img src="../Images/plus.png" height="50px" width="50px" style="margin:10px;"></div>
                 </a>
 

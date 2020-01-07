@@ -1,3 +1,10 @@
+<?php
+
+    if((!isset($_COOKIE['userName'])) || ($_COOKIE['userName'] == "")){
+        header( 'HTTP/1.0 403 Forbidden', TRUE, 403 );
+        die(header('location: ../html/index.html'));
+    }
+?>
 <!DOCTYPE html>
 
 <html>
@@ -51,13 +58,6 @@
                         <option value="Course4">&emsp;Course4</option>
                     </select>
                 </div>
-                
-                <br>
-                <br>
-                <div class="content">
-                    <input type="text" name="DName" class="inputField" placeholder="Display Name">
-                </div>
-
                 <br>
                 <br>
                 <div class="content">
