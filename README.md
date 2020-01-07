@@ -9,7 +9,6 @@ Please visit http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/index.
 
 
 
-In order to see the table structure, please select raw mode.
 
 There are two icons on the top right part of the homepage. The icon to the left is specially made for the admins whereas the one on the right is made for EndGem users. Registration to the website can be done by the 'sign up' option in user login (the button on the right).
 
