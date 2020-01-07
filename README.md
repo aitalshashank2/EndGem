@@ -30,6 +30,7 @@ In order to run the website using the source code, please follow the given instr
                 Password - VARCHAR(255).
     
     Course1, Course2, Course3, Course4 - All have the same table structure as given below:
+    ```
         id                      -INT               -NOT NULL               -PRIMARY KEY             -AUTO INCREMENT
         displayName             -VARCHAR(255)      -NOT NULL
         Date                    -VARCHAR(15)       -NOT NULL
@@ -45,7 +46,7 @@ In order to run the website using the source code, please follow the given instr
                 hash     - VARCHAR(511);
                 status   - INT(1).
         
-
+    ```
 Functionality of the website:
 
 Files can be added by anyone who has a valid g-suite id. The website is designed to display the documents which would play a vital role in the elevnth hour preparation of the various courses.
