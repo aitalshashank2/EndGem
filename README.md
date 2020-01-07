@@ -39,14 +39,17 @@ In order to run the website using the source code, please follow the given instr
         pdfName                 -VARCHAR(255)      -NOT NULL
         path                    -VARCHAR(1023)     -NOT NULL
         Course                  -VARCHAR(255)      -NOT NULL
+     ```
         
-     UserInfo : UserName - VARCHAR(255);
+     UserInfo : 
+     ```
+                UserName - VARCHAR(255);
                 Password - VARCHAR(255);
                 Email    - VARCHAR(511);
                 hash     - VARCHAR(511);
                 status   - INT(1).
-        
-    ```
+      ```  
+   
 Functionality of the website:
 
 Files can be added by anyone who has a valid g-suite id. The website is designed to display the documents which would play a vital role in the elevnth hour preparation of the various courses.
@@ -60,3 +63,37 @@ Account verification functionality is added due to which invalid email ids wont 
 
 *Mobile version of the website is under development. The mobile website under construction is a whole website, not screen-size dependent css.
 
+##Here are the codes to put into mysql console-1
+
+Create Database:
+```
+CREATE DATABASE FilesDatabase;
+```
+Use Database:
+```
+USE FilesDatabase;
+```
+Create table 'Admin Info':
+```
+CREATE TABLE AdminInfo (UserName VARCHAR(255), Password VARCHAR(255));
+```
+Create table 'Course1'
+```
+CREATE TABLE Course1 (id INT NOT NULL AUTO INCREMENT, PRIMARY KEY(id), displayName VARCHAR(255) NOT NULL, Date VARCHAR(15) NOT NULL, downloads INT(15) NOT NULL, size INT(31), pdfName VARCHAR(255) NOT NULL, path VARCHAR(1023) NOT NULL, Course VARCHAR(255) NOT NULL);
+```
+Create table 'Course2'
+```
+CREATE TABLE Course2 (id INT NOT NULL AUTO INCREMENT, PRIMARY KEY(id), displayName VARCHAR(255) NOT NULL, Date VARCHAR(15) NOT NULL, downloads INT(15) NOT NULL, size INT(31), pdfName VARCHAR(255) NOT NULL, path VARCHAR(1023) NOT NULL, Course VARCHAR(255) NOT NULL);
+```
+Create table 'Course3'
+```
+CREATE TABLE Course3 (id INT NOT NULL AUTO INCREMENT, PRIMARY KEY(id), displayName VARCHAR(255) NOT NULL, Date VARCHAR(15) NOT NULL, downloads INT(15) NOT NULL, size INT(31), pdfName VARCHAR(255) NOT NULL, path VARCHAR(1023) NOT NULL, Course VARCHAR(255) NOT NULL);
+```
+Create table 'Course4'
+```
+CREATE TABLE Course4 (id INT NOT NULL AUTO INCREMENT, PRIMARY KEY(id), displayName VARCHAR(255) NOT NULL, Date VARCHAR(15) NOT NULL, downloads INT(15) NOT NULL, size INT(31), pdfName VARCHAR(255) NOT NULL, path VARCHAR(1023) NOT NULL, Course VARCHAR(255) NOT NULL);
+```
+Create table 'UserInfo'
+```
+CREATE TABLE UserInfo (UserName VARCHAR(255) NOT NULL, Password VARCHAR(255), Email VARCHAR(511) NOT NULL, hash VARCHAR(511), status INT(1));
+```
