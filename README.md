@@ -63,7 +63,7 @@ Account verification functionality is added due to which invalid email ids wont 
 
 *Mobile version of the website is under development. The mobile website under construction is a whole website, not screen-size dependent css.
 
-##Here are the codes to put into mysql console-1
+**Here are the codes to put into mysql console-
 
 Create Database:
 ```
