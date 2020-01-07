@@ -5,7 +5,7 @@ Website for IMG Recruitment
 
 Please visit http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/index.php
 
-
+*Please note that account validation e-mail drops in your spam folder and the website can be accessed only with a valid and working IIT-R G-Suite ID!
 
 The website has been hosted using Amazon Web Services on Amazon Linux 2 AMI (HVM) - [ami-00068cd7555f543d5] with Instance type t2.micro
 
@@ -36,7 +36,9 @@ In order to run the website using the source code, please follow the given instr
         
      UserInfo : UserName - VARCHAR(255);
                 Password - VARCHAR(255);
-                Email    - VARCHAR(511).
+                Email    - VARCHAR(511);
+                hash     - VARCHAR(511);
+                status   - INT(1).
         
 
 Functionality of the website:
@@ -47,3 +49,5 @@ For the management of documents and to prevent spam attacks, a functionality of 
 The admin has the ability of deleting contents.
 
 The login status of the user is preserved using cookies. Any internal webpage of the website cannot be accessed without adequate authorization.
+
+Account verification functionality is added due to which invalid email ids wont work. This is done by assigning and sending an md5 hash to the email id.
