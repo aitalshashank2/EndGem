@@ -35,15 +35,37 @@
                     </script>
                 <?php 
             }else{
-                $query = "INSERT INTO UserInfo VALUES ('$user', '$pass', '$email');";
+                $hash = md5(rand(0, 1000));
+
+                $query = "INSERT INTO UserInfo VALUES ('$user', '$pass', '$email', '$hash', '0');";
+
+
+                //Email Section
+
+                $to = $email;
+                $sub = "EndGem | Verification";
+                $message = '
+                
+                Thanks for signing up for EndGem!
+                Your account has been created. Please activate it using the link below.
+
+                http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/verify.php?email='.$email.'&hash='.$hash.'
+
+                                
+                ';
+
+                $headers = 'From:noreply@localhost' . "\r\n";
+                mail($to, $sub, $message, $headers);
+
                 
                 if($conn->query($query)){
                     ?>
                         <script>
-                            alert("User Registration Successful. You can now Log in");
-                            window.location.replace("../html/slogin.html");
+                            alert("Please check your mailbox.");
                         </script>
                     <?php
+		include("../html/slogin.html");
+
                 }else{
                     ?>
                         <script>

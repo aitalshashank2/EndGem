@@ -160,19 +160,19 @@
         var element;
         switch(document.URL)
         {
-            case "http://localhost/EndGem/php/Course.php?cs=Course1":
+            case "http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/Course.php?cs=Course1":
                 element = document.getElementById('navButton1');
                 break;
 
-            case "http://localhost/EndGem/php/Course.php?cs=Course2":
+            case "http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/Course.php?cs=Course2":
                 element = document.getElementById('navButton2');
                 break;
 
-            case "http://localhost/EndGem/php/Course.php?cs=Course3":
+            case "http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/Course.php?cs=Course3":
                 element = document.getElementById('navButton3');
                 break;
 
-            case "http://localhost/EndGem/php/Course.php?cs=Course4":
+            case "http://ec2-54-146-236-179.compute-1.amazonaws.com/EndGem/php/Course.php?cs=Course4":
                 element = document.getElementById('navButton4');
                 break;
 
