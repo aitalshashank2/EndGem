@@ -32,7 +32,6 @@
             });
         </script>
 
-
         <style>
             .reversehr{
                 height: 30px; 
@@ -41,10 +40,7 @@
                 border-width: 0 0 1px 0; 
                 border-radius: 20px;
             }
-
-
         </style>
-
     </head>
 
     <body>
@@ -121,6 +117,7 @@
                     }
                 ?>
             </div>
+
             <div class="showoff">
                 <div style="display:block; text-align: center;"><img src="../Images/whitelogo.png" width="360px" height="320px"></div>
             </div>

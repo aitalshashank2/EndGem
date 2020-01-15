@@ -11,12 +11,12 @@
         $match = $conn->query($query);
         if(mysqli_num_rows($match) > 0){
             $q = "UPDATE UserInfo SET status='1' WHERE email='$email' AND hash='$hash';";
-	        $op = $conn->query($q);
-            ?>
+	    $op = $conn->query($q);
+	?>
                 <script>
                     window.location.replace("../html/signedup.html");
                 </script>
-            <?php
+                <?php
         }else{
             echo "Invalid link";
         }
