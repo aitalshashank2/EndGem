@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Login | End Gem</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="../css/stylesh.css" type="text/css" rel="stylesheet">
+        <link href="../css/uploadstyle.css" type="text/css" rel="stylesheet">
+        <link href="../css/Alogin.css" type="text/css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="nav">
+            <div class="logo">
+                <a href="../php/index.php">
+                    <img src="../Images/logotrans.png" height="50px" width="50px" style="display: inline-flex; margin-top:5px;">
+                    <div class="logoText">
+                        End Gem<br>
+                        <div style="font-size:17px">Witness the Resurrection</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <div class="ACont login" style="padding-bottom:30px;">
+            <h1 id="login">Login</h1>
+
+            <form action="../php/sLogin.php" method="POST" enctype="multipart/form-data">
+                <div class="Acontent" style="width:60%; margin-left:20%; margin-right:20%;">
+                    <input type="text" name="Aname" class="AinputField" placeholder="Username" style="text-align: center;">
+                </div>
+                <br>
+                <div class="Acontent" style="width:60%; margin-left:20%; margin-right:20%;">
+                    <input type="password" name="Apass" class="AinputField" placeholder="Password" style="text-align: center;">
+                </div>
+                <br><br>
+                <div class="Acontent" style="width:40%; margin-left:30%; margin-right:30%;">
+                    <input type="submit" value="Login" class="Abuttoncss" name="Asubmit">
+                </div>
+            </form><br>
+            <div style="text-align:right; font-weight:700"><a style="color:white;" href="Register.html">Sign up</a></div>
+        </div>
+    </body>
+</html>
